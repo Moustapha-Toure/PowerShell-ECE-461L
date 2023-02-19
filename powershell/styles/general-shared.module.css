@@ -4,7 +4,7 @@
 
 .buttonComponent {
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.75;
     transition: all 0.7s ease, font-weight 0.1s;
     
 }

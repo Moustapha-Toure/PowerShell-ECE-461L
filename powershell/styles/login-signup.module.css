@@ -7,16 +7,31 @@
 @import './Fonts.css';
 
 
-
+/* Prevent anyone from highlighting unspecified spots in the site */
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
 
 .loginOrSignupBody {
     height: 100vh;
     margin: 0%;
     padding: 0%;
-    color: antiquewhite;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: whitesmoke;
 }
 
 .mainBody ::-webkit-scrollbar-track,
@@ -39,6 +54,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    color: whitesmoke;
 }
 
 .pageHeader:hover {
@@ -71,6 +87,7 @@
 
 .supportContainer {
     transform: cursor 0.1s;
+    color: antiquewhite;
 }
 
 .supportContainer:hover {

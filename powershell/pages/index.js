@@ -3,6 +3,8 @@ import styles from '@/styles/login-signup.module.css'
 import { RectButton } from '../components/Components'
 
 export default function Home() {
+
+  const bodyClasses = `${styles.loginOrSignupBody}, ${styles.noselect}`; // This is the other way you can add multiple classes. In the inline simply use {bodyClasses} instead
   return (
     <>
       <Head>
@@ -11,7 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.loginOrSignupBody} id='login-or-signup-page-body'>
+      <main className={`${styles.loginOrSignupBody}, ${styles.noselect}`} id='login-or-signup-page-body'>
         <div className={styles.pageContainer}>
           <div className={styles.pageHeader}>
             <h1 className={styles.welcomeTitle}>Welcome to <u><b>PowerShell</b></u></h1>
