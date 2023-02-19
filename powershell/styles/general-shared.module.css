@@ -1,0 +1,23 @@
+@import './Fonts.css';
+
+
+
+.buttonComponent {
+    width: 100%;
+    opacity: 0.5;
+    transition: all 0.7s ease, font-weight 0.1s;
+    
+}
+
+.buttonComponent:hover {
+    cursor: pointer;
+    opacity: 1;
+    font-weight: bold;
+    transition: cursor 0s;
+}
+
+.buttonLabel {
+    font-family: CormorantInfantLight;
+    font-size: 3rem;
+    transition: all 0.1;
+}
