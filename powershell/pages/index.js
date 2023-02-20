@@ -5,6 +5,7 @@ import { RectButton } from '../components/Components'
 export default function Home() {
 
   const bodyClasses = `${styles.loginOrSignupBody}, ${styles.noselect}`; // This is the other way you can add multiple classes. In the inline simply use {bodyClasses} instead
+  
   return (
     <>
       <Head>
