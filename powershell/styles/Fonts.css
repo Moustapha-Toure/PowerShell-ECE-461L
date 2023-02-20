@@ -1,0 +1,200 @@
+/*
+HERE ARE FONTS YOU CAN USE AND A VIDEO ON WHAT'S GOING ON
+----------------Fonts------------------
+
+Fonts- https://www.youtube.com/watch?v=Hwq_Mr12bcI
+
+font-family: 'Alex Brush', cursive;
+font-family: 'Babylonica', cursive;
+font-family: 'Bad Script', cursive;
+font-family: 'Ballet', cursive;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Chewy', cursive;
+font-family: 'Cormorant Infant', serif; https://fonts.google.com/specimen/Cormorant+Infant?query=cormo&preview.text=MoussearTs&preview.text_type=custom
+font-family: 'Dancing Script', cursive;
+font-family: 'Fasthand', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Langar', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Ms Madi', cursive;
+font-family: 'Niconne', cursive;
+font-family: 'Noto Emoji', sans-serif;
+font-family: 'Rubik Microbe', cursive;
+font-family: 'Rubik Puddles', cursive;
+font-family: 'Square Peg', cursive;
+font-family: 'Water Brush', cursive;
+
+
+*/
+
+@font-face {
+    font-family: Alex; /* Special Cursive */
+    src: url(../Assets/Fonts/Alex_Brush/AlexBrush-Regular.ttf);
+}
+
+@font-face {
+    font-family: Babylonica;
+    src: url(../Assets/Fonts/Babylonica/Babylonica-Regular.ttf);
+}
+
+@font-face {
+    font-family: BadScript; /* Special berkshire thin Italic Look*/
+    src: url(../Assets/Fonts/Bad_Script/BadScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ballet; /* Special Cursive Cursive Cursive SPECIALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL*/
+    src: url(../Assets/Fonts/Ballet/Ballet-Regular-VariableFont_opsz.ttf);
+}
+
+@font-face {
+    font-family: BerkshireSwash; /* Special Bold Italic Look*/
+    src: url(../Assets/Fonts/Berkshire_Swash/BerkshireSwash-Regular.ttf);
+}
+
+@font-face {
+    font-family: Caveat;
+    src: url(../Assets/Fonts/Caveat/Caveat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Chewy; /* Special Bold */
+    src: url(../Assets/Fonts/Chewy/Chewy-Regular.ttf);
+}
+
+@font-face {
+    font-family: CormorantInfantBold;
+    src: url(../Assets/Fonts/Cormorant_Infant/CormorantInfant-Bold.ttf);
+}
+
+@font-face {
+    font-family: CormorantInfantBoldItalic; /* Regular */
+    src: url(../Assets/Fonts/Cormorant_Infant/CormorantInfant-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: CormorantInfantItalic;
+    src: url(../Assets/Fonts/Cormorant_Infant/CormorantInfant-Italic.ttf);
+}
+
+@font-face {
+    font-family: CormorantInfantLight;
+    src: url(../Assets/Fonts/Cormorant_Infant/CormorantInfant-Light.ttf);
+}
+
+@font-face {
+    font-family: CormorantInfantLightItalic;
+    src: url(../Assets/Fonts/Cormorant_Infant/CormorantInfant-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: CormorantInfantMedium;
+    src: url(../Assets/Fonts/Cormorant_Infant/CormorantInfant-Medium.ttf);
+}
+
+@font-face {
+    font-family: CormorantInfantMediumItalic;
+    src: url(../Assets/Fonts/Cormorant_Infant/CormorantInfant-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: CormorantInfantRegular;
+    src: url(../Assets/Fonts/Cormorant_Infant/CormorantInfant-Regular.ttf);
+}
+
+@font-face {
+    font-family: CormorantInfantSemiBold;
+    src: url(../Assets/Fonts/Cormorant_Infant/CormorantInfant-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: CormorantInfantSemiBoldItalic;
+    src: url(../Assets/Fonts/Cormorant_Infant/CormorantInfant-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: DancingScript; /* Special ; Regular 400, Bold 700 */
+    src: url(../Assets/Fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: FastOne; /* Special Fast Effect*/
+    src: url(../Assets/Fonts/Faster_One/FasterOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Fasthand;
+    src: url(../Assets/Fonts/Fasthand/Fasthand-Regular.ttf);
+}
+
+@font-face {
+    font-family: FrederickaTheGreat; /* Special Bold Slight Chalk Fade*/
+    src: url(../Assets/Fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf);
+}
+
+@font-face {
+    font-family: HomemadeApple; /* CURSIVE HANDWRITTTINGGGGGGGGGGGG*/
+    src: url(../Assets/Fonts/Homemade_Apple/HomemadeApple-Regular.ttf);
+}
+
+@font-face {
+    font-family: IndieFlower;
+    src: url(../Assets/Fonts/Indie_Flower/IndieFlower-Regular.ttf);
+}
+
+@font-face {
+    font-family: Langar; /* Special Cursive Italic */
+    src: url(../Assets/Fonts/Langar/Langar-Regular.ttf);
+}
+
+@font-face {
+    font-family: MarckScript; /* Special Cursive Italic */
+    src: url(../Assets/Fonts/Marck_Script/MarckScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: Monoton; /* Special Special Special Lines on Lines */
+    src: url(../Assets/Fonts/Monoton/Monoton-Regular.ttf);
+}
+
+@font-face {
+    font-family: MsMadi; /* THAT NICE CURSIVE YOU WERE LOOKING FOR */
+    src: url(../Assets/Fonts/Ms_Madi/MsMadi-Regular.ttf);
+}
+
+@font-face {
+    font-family: Niconne; /* Chill, just right cursive*/
+    src: url(../Assets/Fonts/Niconne/Niconne-Regular.ttf);
+}
+
+@font-face {
+    font-family: NotoEmoji;
+    src: url(../Assets/Fonts/Noto_Emoji/NotoEmoji-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RubikMicrobe; /* Special Special Special Bold Rocks */
+    src: url(../Assets/Fonts/Rubik_Microbe/RubikMicrobe-Regular.ttf);
+}
+
+@font-face {
+    font-family: RubikPuddles; /* Special Special Special Bold clouds */
+    src: url(../Assets/Fonts/Rubik_Puddles/RubikPuddles-Regular.ttf);
+}
+
+@font-face {
+    font-family: SquarePeg;
+    src: url(../Assets/Fonts/Square_Peg/SquarePeg-Regular.ttf);
+}
+
+@font-face {
+    font-family: WaterBrush; /* Special Cursive */
+    src: url(../Assets/Fonts/Water_Brush/WaterBrush-Regular.ttf);
+}
+
+
+
