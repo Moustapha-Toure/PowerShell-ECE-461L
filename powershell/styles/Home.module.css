@@ -11,13 +11,13 @@
     
 }
 
-.HomeScrollContainer {
+/* .HomeScrollContainer {
     height: 90vh;
     padding: 1%;
     color: aliceblue;
     display: flex;
     overflow-x: hidden;
-}
+} */
 
 .dashButtonContainer {
     padding: 2%;
