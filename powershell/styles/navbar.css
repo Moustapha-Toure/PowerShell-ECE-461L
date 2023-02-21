@@ -1,0 +1,133 @@
+@import './Fonts.css'; /* importing all of the fonts */
+
+
+
+.navbar {
+    z-index: 100;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 0%;
+    background-image: url('../Assets/Images/Background/black-carbon-fiber.jpg');
+    background-size: contain;
+    background-color: black;
+    box-shadow: 2vw 2vh 15px rgb(207, 198, 198);
+  }
+  
+  .navbarContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navLink {
+    text-decoration-line: none;
+    display: flex;
+    color: #cabebe;
+  }
+  
+  #pshellLogoIcon {
+    width: 50%;
+    cursor: default;
+  }
+  
+  #homeLink {
+    cursor: default;
+  }
+  #webname {
+    text-decoration-line: none; /* remove the line the link auto adds */
+    color: white;
+    padding: 0% 5%;
+    margin: 0%;
+    align-self: flex-start;
+    font-size: 3vw;
+    font-family: Monoton;
+    font-weight: lighter;
+    
+  }
+  
+  #webname:hover {
+    transition: all 0.9s ease;
+    cursor: pointer;
+  }
+  
+  .regNavLinks {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .iconLogo {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    transition: all 0.9s ease;
+  }
+  
+  .iconLogo:hover {
+    font-size: 3.5rem;
+  }
+  
+  .navbarDesc {
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+    font-size: 1rem;
+  }
+  
+  #hardwareIcon {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #hardwareLink {
+    transition: all 0.4s ease-in-out;
+    opacity: 0.8;
+  }
+  
+  #hardwareLink:hover {
+    cursor: pointer;
+    color: white; /* #d30058 */
+    opacity: 1;
+  }
+  
+  #accountIcon {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #accountLink {
+    transition: all 0.4s ease-in;
+    opacity: 0.8;
+  }
+  
+  #accountLink:hover {
+    cursor: pointer;
+    color: white; /* #a70045 */
+    opacity: 1;
+  }
+  
+  
+  #hardwareNav div .regNavLinks div .hardwareLink,
+  #hardwareNav div .regNavLinks div .hardwareLink
+  .navLink:hover {
+    color: #4d355f;
+  }
+  
+  /* The underline */
+  #hardwareNav div .regNavLinks div .hardwareLink::after,
+  #hardwareNav div .regNavLinks div .hardwareLink::after
+  .navLink:hover::after {
+    content: "";
+      width: 25%;
+      height: 2px;
+      background-color: #4d355f;
+      position: absolute;
+      bottom: -5%;
+      left: 30%;
+      text-shadow: 0 1vh 3px #fff, 0 1vh 8px #fff;
+  }

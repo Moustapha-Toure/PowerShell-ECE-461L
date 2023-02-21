@@ -1,10 +1,15 @@
 @import './Fonts.css'; /* importing all of the fonts */
 @import './general-shared.module.css'; /* Generally used components/styles */
-/* The TURE page body itself that react renders */
+@import './navbar.css';
+@import './footer.css';
+
+
 body{ 
   width: 100%;
   margin: 0%;
-  background-color: #130a12;
+  background-color: #0e070d;
+  background-image: url('../Assets/Images/Background/black-carbon-fiber.jpg');
+  background-size: contain;
   overflow: overlay;
 }
 
@@ -12,6 +17,7 @@ body{
 
 body::-webkit-scrollbar {
   width: 0em;
+  display: none;
 }
 
 body::-webkit-scrollbar-track {
@@ -20,13 +26,19 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: pink;
-  outline: 1.5px solid rgb(255, 255, 255);
+  display: none;
+  background-color: #2d0836;
+  outline: 0.5px solid #2d0836;
   border-radius: 5px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
   background: rgb(64, 8, 85);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Prevent anyone from highlighting unspecified spots in the site */
