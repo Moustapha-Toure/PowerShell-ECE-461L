@@ -1,0 +1,102 @@
+@import './Fonts.css'; /* importing all of the fonts */
+
+.footerContainer {
+    height: 90vh;
+    padding: 1%;
+    background-color: #1e021e;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.flexedFooter {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 85vh;
+}
+
+.siteMapContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+.siteDescription {
+    font-size: 2.5vw;
+    font-family: FrederickaTheGreat;
+
+}
+
+#siteMapText {
+    margin: 10% 0% 5% 25%;
+}
+
+.siteItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.siteItems {
+    width: 50%;
+    text-align: center;
+    
+}
+
+.siteMapLabel {
+    margin: 1%;
+    font-size: 1.5vw;
+    font-family: CormorantInfantLight;
+    transition: all 0.8s;
+}
+
+.siteMapLabel:hover {
+    font-size: 1.75vw;
+    font-style: italic;
+}
+
+
+
+.teamContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#teamDescriptionText {
+    margin-left: 20%;
+}
+
+.shellTeamMembers {
+    align-self: center;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+
+.copyrightContainer {
+    height: 5vh;
+    padding: 0% 1%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.copyrightText{
+    font-family: CormorantInfantLight;
+    font-size: 1vw;
+}
+
+#copyrightIcon{
+    align-self: center;
+    margin: 0% 1%;
+    font-size: 2vw;
+}
+
+#crSpring {
+    align-self: center;
+}

@@ -3,7 +3,7 @@
 @import './login.css';
 /* importing the specific login page css */
 @import './signup.css';
-/* importing the specific signuo page css */
+/* importing the specific signup page css */
 @import './Fonts.css';
 
 
@@ -64,8 +64,8 @@
 .welcomeTitle{
     padding: 0%;
     margin: 0%;
-    font-family: Alex;
-    font-size: 10rem;
+    font-family: DancingScript; /* or Alex looks good too */
+    font-size: 10vw;
     font-weight: lighter;
     margin-bottom: 0;
 }
@@ -74,7 +74,7 @@
     margin-top: 0;
     font-family: RubikMicrobe;
     font-weight: lighter;
-    font-size: 3rem;
+    font-size: 3vw;
 }
 
 .chooseLoginOrSignup{
