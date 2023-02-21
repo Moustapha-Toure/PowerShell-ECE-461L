@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import { Navbar, HomeButton, Footer } from '../components/Components'
+import { Navbar, HomeButton, Footer } from '@/components/Components'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Slide from 'react-reveal/Slide';
 import Rotate from 'react-reveal/Rotate';
@@ -19,14 +19,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.loginOrSignupBody}, ${styles.noselect}`} id='login-or-signup-page-body'>
+      <main className={`${styles.homeBody}, ${styles.noselect}`} id='home-page-body'>
         <div className='navbar' id='homeNav'>
           <Navbar />
         </div>
 
         <div id={styles.homeContainer} className={`noselect`}>
 
-          <div className={styles.HomeScrollContainer} id={styles.homeWelcomeContainer}>
+          <div className={`${styles.HomeScrollContainer}, coverPage`} id={styles.homeWelcomeContainer}>
             <Rotate top right>
               <div className={styles.dashButtonContainer} id={styles.navigateToDashboard}>
                 <div className={styles.diamondButton}>
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
 
-          <div className={styles.HomeScrollContainer} id={styles.newHomeProjectContainer}>
+          <div className={`${styles.HomeScrollContainer}, coverPage`} id={styles.newHomeProjectContainer}>
             <div className={styles.newHomeProjectMessage}>
               <Rotate bottom left>
                 <h1 className={styles.newHomeProjectText} id={styles.newHomeProjectConstruct}>
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.HomeScrollContainer} id={styles.viewHomeProjectContainer}>
+          <div className={`${styles.HomeScrollContainer}, coverPage`} id={styles.viewHomeProjectContainer}>
             <div className={styles.newHomeProjectMessage}>
               <Rotate bottom left>
                 <h1 className={styles.newHomeProjectText} id={styles.viewHomeProjectConstruct}>
@@ -101,7 +101,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.HomeScrollContainer} id={styles.getMoreRessources}>
+          <div className={`${styles.HomeScrollContainer}, coverPage`} id={styles.getMoreRessources}>
             <div className={styles.newHomeResourcesMessage}>
               <Rotate bottom left>
                 <h1 className={styles.newHomeResourceText} id={styles.newHomeResourceNeed}>

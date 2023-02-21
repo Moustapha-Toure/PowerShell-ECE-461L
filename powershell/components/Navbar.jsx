@@ -15,7 +15,7 @@ const Navbar = () => {
             </div>
             <div className='regNavLinks'>
                 <div className='hardwareLogo' id='hardwareIcon'>
-                    <Link href='./'>
+                    <Link href='/'>
                         <div className='navLink' id='hardwareLink'>
                             <div className='iconLogo' id='boxIcon'>
                                 <TbBox />
@@ -25,7 +25,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className='accountLogo' id='accountIcon'>
-                    <Link href='./'>
+                    <Link href='/Account'>
                         <div className='navLink' id='accountLink'>
                             <div className='iconLogo' id='profileIcon'>
                                 <MdOutlineAccountCircle />
