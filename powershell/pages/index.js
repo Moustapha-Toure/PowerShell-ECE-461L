@@ -29,7 +29,9 @@ export default function Home() {
               </Link>
             </div>
             <div className={styles.buttonContainer} style={{ width: '55%', padding: '1vw' }}>
-              <RectButton theme='dark' label='Signup' />
+              <Link href='/Account'>
+                <RectButton theme='dark' label='Signup' />
+              </Link>
             </div>
           </div>
 

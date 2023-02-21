@@ -1,10 +1,12 @@
-@import './Fonts.css'; /* importing all of the fonts */
-@import './general-shared.module.css'; /* Generally used components/styles */
+@import './Fonts.css';
+/* importing all of the fonts */
+@import './general-shared.module.css';
+/* Generally used components/styles */
 @import './navbar.css';
 @import './footer.css';
 
 
-body{ 
+body {
   width: 100%;
   margin: 0%;
   background-color: #0e070d;
@@ -24,7 +26,7 @@ body::-webkit-scrollbar-track {
   /* box-shadow: inset 0 0 6px rgba(255, 176, 120, 0.8); */
   display: none;
 }
- 
+
 body::-webkit-scrollbar-thumb {
   display: none;
   background-color: #2d0836;
@@ -56,4 +58,12 @@ a {
   user-select: none;
   /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.coverPage {
+  height: 90vh;
+  padding: 1%;
+  color: aliceblue;
+  display: flex;
+  overflow-x: hidden;
 }
