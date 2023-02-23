@@ -75,8 +75,8 @@
 }
 
 .accountCreateNewButton:hover {
-    font-size: 1.75vw;
-    border-top-right-radius: 70px;
+    background-color: #535353;
+    border-top-right-radius: 90px;
 
 }
 

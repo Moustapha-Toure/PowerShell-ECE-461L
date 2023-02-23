@@ -67,3 +67,16 @@ a {
   display: flex;
   overflow-x: hidden;
 }
+
+
+.coverPage::-webkit-scrollbar {
+  display: none;
+}
+
+.coverPage::-webkit-scrollbar-track {
+  display: none;
+}
+
+.coverPage::-webkit-scrollbar-thumb {
+  display: none;
+}
