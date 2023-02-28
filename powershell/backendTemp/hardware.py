@@ -9,6 +9,7 @@ def new_HWset(setName, availability, used=0):
     db_name = client['Resources']
     collection_name = db_name['HWsets']
 
+
     hw_set = {"Name":setName,
             "Availability":availability
             #TODO:add more HW attributes
