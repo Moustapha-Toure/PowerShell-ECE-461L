@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { FaRegCopyright } from 'react-icons/Fa'
+import { FaRegCopyright } from 'react-icons/fa'
 
 
 const Footer = () => {
