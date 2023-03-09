@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { TbBox } from 'react-icons/tb'
-import { MdOutlineAccountCircle } from 'react-icons/Md'
+import { MdOutlineAccountCircle } from 'react-icons/md'
 import { CanvasDashboard } from './Components'
 
 
