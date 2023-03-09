@@ -32,6 +32,47 @@ font-family: 'Water Brush', cursive;
 */
 
 @font-face {
+    font-family: Akronim; /* Landing page */
+    src: url(../Assets/Fonts/Akronim/Akronim-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: Aladin; /* Dashboard */
+    src: url(../Assets/Fonts/Aladin/Aladin-Regular.ttf);
+}
+
+@font-face {
+    font-family: AlmendraBold; /* Dashboard */
+    src: url(../Assets/Fonts/Almendra/Almendra-Bold.ttf);
+}
+
+@font-face {
+    font-family: AlmendraBoldItalic; /* Dashboard */
+    src: url(../Assets/Fonts/Almendra/Almendra-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: AlmendraItalic; /* Dashboard */
+    src: url(../Assets/Fonts/Almendra/Almendra-Italic.ttf);
+}
+
+@font-face {
+    font-family: AlmendraRegular; /* Dashboard */
+    src: url(../Assets/Fonts/Almendra/Almendra-Regular.ttf);
+}
+
+@font-face {
+    font-family: NovaCut; /* Dashboard */
+    src: url(../Assets/Fonts/Nova_Cut/NovaCut-Regular.ttf);
+}
+
+/*
+
+main Used
+*/
+
+@font-face {
     font-family: Alex; /* Special Cursive */
     src: url(../Assets/Fonts/Alex_Brush/AlexBrush-Regular.ttf);
 }

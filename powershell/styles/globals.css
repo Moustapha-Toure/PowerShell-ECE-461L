@@ -1,3 +1,4 @@
+@import './Dashboard.css';
 @import './Fonts.css';
 /* importing all of the fonts */
 @import './general-shared.module.css';
@@ -66,4 +67,17 @@ a {
   color: aliceblue;
   display: flex;
   overflow-x: hidden;
+}
+
+
+.coverPage::-webkit-scrollbar {
+  display: none;
+}
+
+.coverPage::-webkit-scrollbar-track {
+  display: none;
+}
+
+.coverPage::-webkit-scrollbar-thumb {
+  display: none;
 }

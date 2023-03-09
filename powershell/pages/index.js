@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.loginOrSignupBody}, ${styles.noselect}`} id='login-or-signup-page-body'>
-        <div className={styles.pageContainer}>
+        <div className={`${styles.pageContainer}`}>
           <div className={styles.pageHeader}>
             <h1 className={styles.welcomeTitle}>Welcome to <u><b>PowerShell</b></u></h1>
             <h1 className={styles.welcomeSubTitle}>Get The Tools You Need</h1>
