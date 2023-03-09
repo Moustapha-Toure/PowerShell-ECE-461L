@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { FaRegCopyright } from 'react-icons/Fa'
+import { FaRegCopyright } from 'react-icons/fa'
 
 
 const Footer = () => {
@@ -14,32 +14,32 @@ const Footer = () => {
                     </h1>
                     <div className='siteItemContainer'>
                         <div className='siteItems' id='toHomePage'>
-                            <Link href='./Home'>
+                            <Link href='/Home'>
                                 <p className='siteMapLabel'>Home Page</p>
                             </Link>
                         </div>
                         <div className='siteItems' id='toUpdateProjects'>
-                            <Link href='./'>
+                            <Link href='/Account'>
                                 <p className='siteMapLabel'>Update a Project</p>
                             </Link>
                         </div>
                         <div className='siteItems' id='toCreateProjects'>
-                            <Link href='./'>
+                            <Link href='/Account'>
                                 <p className='siteMapLabel'>Create New Project</p>
                             </Link>
                         </div>
                         <div className='siteItems' id='toProjectDetails'>
-                            <Link href='./'>
+                            <Link href='/Account'>
                                 <p className='siteMapLabel'>Project Details</p>
                             </Link>
                         </div>
                         <div className='siteItems' id='toUserAccount'>
-                            <Link href='./'>
+                            <Link href='/Account'>
                                 <p className='siteMapLabel'>View Account</p>
                             </Link>
                         </div>
                         <div className='siteItems' id='toHardwareOverview'>
-                            <Link href='./'>
+                            <Link href='/Hardware'>
                                 <p className='siteMapLabel'>Hardware Count</p>
                             </Link>
                         </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                         <p className='shellMembers'>Ethan Blumenfeld</p>
                         <p className='shellMembers'>Paul Clauss</p>
                         <p className='shellMembers'>Rifah Tasnim</p>
-                        <p className='shellMembers'>Moustapha Toure</p>
+                        <p className='shellMembers'>Moustapha Tour&eacute;</p>
                         <p className='shellMembers'>Justin Ye</p>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import Slide from 'react-reveal/Slide';
 import Rotate from 'react-reveal/Rotate';
 import Zoom from 'react-reveal/Zoom';
 import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 import Link from 'next/link';
 
 
@@ -137,9 +138,9 @@ export default function Home() {
 
           </div>
         </div>
-        <Flip bottom>
+        <Fade bottom>
           <Footer />
-        </Flip>
+        </Fade>
       </main>
     </>
   )
