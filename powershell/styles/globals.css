@@ -1,3 +1,4 @@
+@import './Dashboard.css';
 @import './Fonts.css';
 /* importing all of the fonts */
 @import './general-shared.module.css';
@@ -46,18 +47,11 @@ a {
 /* Prevent anyone from highlighting unspecified spots in the site */
 .noselect {
   -webkit-touch-callout: none;
-  /* iOS Safari */
   -webkit-user-select: none;
-  /* Safari */
   -khtml-user-select: none;
-  /* Konqueror HTML */
   -moz-user-select: none;
-  /* Old versions of Firefox */
   -ms-user-select: none;
-  /* Internet Explorer/Edge */
   user-select: none;
-  /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .coverPage {
@@ -66,4 +60,17 @@ a {
   color: aliceblue;
   display: flex;
   overflow-x: hidden;
+}
+
+
+.coverPage::-webkit-scrollbar {
+  display: none;
+}
+
+.coverPage::-webkit-scrollbar-track {
+  display: none;
+}
+
+.coverPage::-webkit-scrollbar-thumb {
+  display: none;
 }

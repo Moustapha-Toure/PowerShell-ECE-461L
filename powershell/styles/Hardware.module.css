@@ -1,0 +1,167 @@
+@import './Fonts.css';
+
+#hardwareParent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding-top: 5vh;
+    padding-bottom: 20vh;
+    min-height: 100vh;
+}
+
+.hardwareSets {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.setDiv {
+    width: 20vw;
+    margin: 1% 10% 5% 10%;
+}
+
+.hardwareSetDisplay{
+    background-color: #3F1D1D;
+    width: 100%;
+    border-radius: 25px;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* if we do add more hardware from the database... it will auto wrap to next row if current row is full */
+    transition: all 0.25s ease-in-out;
+    margin: 1% 5%;
+}
+
+.hardwareSetDisplay:hover {
+    box-shadow: 1px 5px 10px #a56666;
+    cursor: none;
+}
+
+.hardwareShowcase {
+    border-radius: 25px 25px 0 0;
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    text-align: end;
+    font-size: 2vw;
+    font-family: Aladin;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hardwareQty {
+    margin: 5%;
+    height: fit-content;
+    padding: 1.5%;
+    background-color: crimson;
+    border-radius: 300px;
+    cursor: help;
+    transition: all 0.25s ease-in-out;
+}
+
+.hardwareQty:hover {
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    padding: 2%;
+}
+
+.hardwareDetails {
+    font-family: NovaCut;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.hardwareNavigations {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 30%;
+}
+
+.createStar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+
+.theStar {
+    font-size: 15vw;
+    transform: rotate(-45deg);
+    color: #352828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.theCreateText {
+    font-size: 2vw;
+    color: white;
+    position: fixed;
+    bottom: 0vh;
+    left: 5vw;
+    transform: rotate(20deg);
+    margin: 7.5% 0%;
+    transform: all 0.2s ease-in-out;
+}
+
+.theCreateText:hover {
+    font-style: italic;
+    text-decoration-line: overline;
+    text-decoration-color: white;
+    color: black;
+
+}
+
+.theCreateDescription {
+    position: fixed;
+    bottom: 0;
+    left: 10vw;
+    font-size: 2vw;
+    font-family: CormorantInfantBold;
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    padding: 0.5%;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.theCreateDescription:hover {
+    text-decoration-line: underline;
+    color: black;
+    background-color: white;
+}
+
+.updateOld {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #E0CCCC;
+    border-radius: 250px 0 0 0;
+    padding-left: 5%;
+    color: black;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.updateOld:hover{
+    color: white;
+    text-decoration-line: underline;
+}
+
+.theUpdateDescription {
+    font-size: 1.5vw;
+    font-family: NovaCut;
+}
+
+.updateIcon {
+    font-size: 4vw;
+}

@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    z-index: 100;
 }
 
 .flexedFooter {
@@ -78,6 +79,18 @@
     font-size: 1.5vw;
 }
 
+.toRez {
+    cursor: pointer;
+    font-size: 1.75vw;
+}
+
+.toRez:hover {
+    font-size: 1.8vw;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    text-shadow: 0vh 0vw 5px white;
+}
 
 .copyrightContainer {
     height: 5vh;

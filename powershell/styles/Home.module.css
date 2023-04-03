@@ -7,6 +7,15 @@
     width: 100%;
 }
 
+/* .HomeScrollContainer {
+    height: 90vh;
+    padding: 1%;
+    color: aliceblue;
+    display: flex;
+    overflow-x: hidden;
+} */
+
+
 .dashButtonContainer {
     padding: 2%;
     width: 20%;
@@ -22,6 +31,7 @@
     justify-content: center;
     transition: all 0.8s ease;
     color: black;
+    cursor: pointer;
 }
 
 .diamondButton:hover {
@@ -29,7 +39,6 @@
     width: 20%;
     font-size: 1.75vw;
     border-radius: 40px;
-    cursor: pointer;
     background-color: black;
     color: aliceblue;   
 }
@@ -125,11 +134,10 @@
 #homeToProjects{
     align-self: center;
     border-radius: 10px 0px 10px 80px;
-
+    cursor: pointer;
 }
 
 .homeButton:hover {
-    cursor: pointer;
     opacity: 1;
     background-color: #413f3f;
     color: white;

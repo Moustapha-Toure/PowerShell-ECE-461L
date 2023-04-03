@@ -1,0 +1,191 @@
+@import './Fonts.css';
+/* importing all of the fonts */
+
+.canvasContainer {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    /* for the canvas down bellow navbar */
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+    color: blue;
+    height: 88vh;
+}
+
+.nonCanvasSection {
+    width: 45%;
+    height: 88vh;
+    background-color: rgba(145, 145, 145, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 2vw;
+    font-family: Babylonica;
+    filter: blur(10px);
+    transition: all 0.1s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+}
+
+.CanvasSection {
+    width: 55%;
+    height: 88vh;
+    background-color: black;
+    background-size: cover;
+    transition: filter 1s ease-in;
+    overflow-y: scroll;
+}
+
+
+.CanvasSection::-webkit-scrollbar {
+    width: 0em;
+    display: none;
+}
+
+.CanvasSection::-webkit-scrollbar-track {
+    display: none;
+}
+
+.CanvasSection::-webkit-scrollbar-thumb {
+    display: none;
+    background-color: #2d0836;
+    outline: 0.5px solid #2d0836;
+    border-radius: 5px;
+}
+
+.CanvasSection::-webkit-scrollbar-thumb:hover {
+    background: rgb(64, 8, 85);
+}
+
+.CanvasSection:hover {
+    filter: brightness(1.25) contrast(125%) grayscale(100%) drop-shadow(-10px 1px 20px white) invert(1%);
+
+}
+
+.yesProjectSection {
+    filter: brightness(1.25) contrast(125%) grayscale(100%) drop-shadow(-5px 1px 20px white) invert(5%);
+    background-image: url(../Assets/Images/Background/Dark-Laptop.jpg);
+}
+
+.noProjectSection {
+    background-image: url(../Assets/Images/Background/emptiness.jpg);
+    color: red;
+}
+
+.fixThat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fixTittle {
+    font-size: 2vw;
+    font-family: chewy;
+}
+
+#fixTxt {
+    font-size: 1.25vw;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+#fixTxt:hover {
+    font-size: 1.5vw;
+    font-style: italic;
+    transition: all 0.3s ease-in-out;
+}
+
+.nonCanvasSection:hover {
+    filter: blur(0);
+    font-size: 3vw;
+}
+
+.canvasHead {
+    font-size: 3.5vw;
+    font-family: Aladin;
+    text-align: center;
+}
+
+.dashProjects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashProjectContainer {
+    /* padding: 1% 5% 2% 5%; */
+    width: 75%;
+    margin: 2.5%;
+    background-color: #cececebb;
+    border-radius: 80px;
+    transition: all 0.5s ease;
+}
+
+.dashProjectContainer:hover {
+    background-color: #cecece;
+    border-radius: 85px;
+}
+
+.projectName {
+    font-size: 2vw;
+    text-align: end;
+    text-decoration-line: underline;
+    font-family: Almendra;
+    color: #572F2F;
+    margin: 1% 10%;
+}
+
+.projectIdDisplay {
+    font-style: italic;
+    transition: all 0.25s ease-in-out;
+    text-align: center !important;
+    cursor: copy;
+}
+
+.projectIdDisplay:hover {
+    font-size: 2.25vw;
+}
+
+.lastUpdateDisplay {
+    text-align: center !important;
+    font-family: Caveat !important;
+    font-size: 1.5vw !important;
+    margin-bottom: 5% !important;
+}
+
+.dashLine {
+    width: 95%;
+    border: 1px solid rgb(147, 120, 152);
+    margin: auto;
+}
+
+.detailContainer {
+    background: #400855ee;
+    color: white;
+    width: auto;
+    padding: 5%;
+    border-radius: 0 0 80px 80px;
+    border-top: 1vh solid grey;
+    font-size: 2vw;
+    transition: all 0.5s ease-in-out;
+}
+
+.detailContainer:hover {
+    box-shadow: 1px 5px 5px gray;
+    background: #400855;
+
+}
+
+.projectDetails {
+    text-align: start;
+    font-family: Aladin;
+    margin: 1%;
+    padding: 1%;
+}
