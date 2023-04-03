@@ -6,11 +6,10 @@
     width: 100%;
     opacity: 0.75;
     transition: all 0.7s ease, font-weight 0.1s;
-    
+    cursor: pointer;
 }
 
 .buttonComponent:hover {
-    cursor: pointer;
     opacity: 1;
     font-weight: bold;
     transition: cursor 0s;

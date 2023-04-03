@@ -1,10 +1,12 @@
-@import './Fonts.css'; /* importing all of the fonts */
+@import './Fonts.css';
+/* importing all of the fonts */
 
 .canvasContainer {
     width: 100%;
     position: fixed;
     right: 0;
-    bottom: 0; /* for the canvas down bellow navbar */
+    bottom: 0;
+    /* for the canvas down bellow navbar */
     z-index: 100;
     transition: all 0.5s ease-in-out;
     display: flex;
@@ -26,21 +28,14 @@
     filter: blur(10px);
     transition: all 0.1s ease-in-out;
     text-align: center;
-}
-
-.nonCanvasSection:hover {
-    filter: blur(0);
     cursor: pointer;
-    font-size: 3vw;
 }
 
 .CanvasSection {
     width: 55%;
     height: 88vh;
     background-color: black;
-    background-image: url(../Assets/Images/Background/Dark-Laptop.jpg);
     background-size: cover;
-    filter: brightness(1.25) contrast(125%) grayscale(100%) drop-shadow(-5px 1px 20px white) invert(5%);
     transition: filter 1s ease-in;
     overflow-y: scroll;
 }
@@ -49,28 +44,67 @@
 .CanvasSection::-webkit-scrollbar {
     width: 0em;
     display: none;
-  }
-  
-  .CanvasSection::-webkit-scrollbar-track {
+}
+
+.CanvasSection::-webkit-scrollbar-track {
     display: none;
-  }
-  
-  .CanvasSection::-webkit-scrollbar-thumb {
+}
+
+.CanvasSection::-webkit-scrollbar-thumb {
     display: none;
     background-color: #2d0836;
     outline: 0.5px solid #2d0836;
     border-radius: 5px;
-  }
-  
-  .CanvasSection::-webkit-scrollbar-thumb:hover {
+}
+
+.CanvasSection::-webkit-scrollbar-thumb:hover {
     background: rgb(64, 8, 85);
-  }
+}
 
 .CanvasSection:hover {
     filter: brightness(1.25) contrast(125%) grayscale(100%) drop-shadow(-10px 1px 20px white) invert(1%);
 
 }
 
+.yesProjectSection {
+    filter: brightness(1.25) contrast(125%) grayscale(100%) drop-shadow(-5px 1px 20px white) invert(5%);
+    background-image: url(../Assets/Images/Background/Dark-Laptop.jpg);
+}
+
+.noProjectSection {
+    background-image: url(../Assets/Images/Background/emptiness.jpg);
+    color: red;
+}
+
+.fixThat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fixTittle {
+    font-size: 2vw;
+    font-family: chewy;
+}
+
+#fixTxt {
+    font-size: 1.25vw;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+#fixTxt:hover {
+    font-size: 1.5vw;
+    font-style: italic;
+    transition: all 0.3s ease-in-out;
+}
+
+.nonCanvasSection:hover {
+    filter: blur(0);
+    font-size: 3vw;
+}
 
 .canvasHead {
     font-size: 3.5vw;
@@ -106,6 +140,24 @@
     font-family: Almendra;
     color: #572F2F;
     margin: 1% 10%;
+}
+
+.projectIdDisplay {
+    font-style: italic;
+    transition: all 0.25s ease-in-out;
+    text-align: center !important;
+    cursor: copy;
+}
+
+.projectIdDisplay:hover {
+    font-size: 2.25vw;
+}
+
+.lastUpdateDisplay {
+    text-align: center !important;
+    font-family: Caveat !important;
+    font-size: 1.5vw !important;
+    margin-bottom: 5% !important;
 }
 
 .dashLine {
