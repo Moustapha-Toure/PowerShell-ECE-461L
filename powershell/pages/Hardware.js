@@ -1,16 +1,54 @@
 import Head from 'next/head'
+import React, { useState, useEffect } from 'react'
+import { useStateContext } from '@/context/StateContext'
 import styles from '@/styles/Hardware.module.css'
 import { Navbar, Footer, HardwareDisplay } from '@/components/Components'
 import { AiFillStar } from 'react-icons/ai'
 import { BsBagCheck } from 'react-icons/bs'
 import Tada from 'react-reveal/Tada'
+import Cookies from 'universal-cookie';
 import Slide from 'react-reveal/Slide'
 
-
-export const Wrenches = new URL('../Assets/Images/Hardware/Wrenches.jpg', import.meta.url);
-export const Tools = new URL('../Assets/Images/Hardware/Power-tools.jpg', import.meta.url);
-
 export default function Hardware() {
+    const store = new Cookies();
+
+    const { checkAuthentication } = useStateContext();
+    useEffect(() => { checkAuthentication() })
+    // vvvvvv CHANGE WITH BACKEND LATER vvvvvv //
+
+    const [hardwareSets, setHardwareSets] = useState([]);
+    const [fetched, setFetched] = useState(false)
+
+
+
+    useEffect(() => {
+        if (!fetched) {
+            fetch('http://localhost:5000/getHardwareSets', { method: 'POST' }).then((response) => {
+                response.json().then((data) => {
+                    setHardwareSets(data['hardwareSets']);
+                    setFetched(true)
+                })
+            }).catch((error) => {
+                if (error.response) {
+                    console.log(error.response)
+                    console.log(error.status)
+                    console.log(error.headers)
+                }
+            })
+        }
+    })
+
+    // let testingHWSets = [
+    //     { "SetName": "Hardware Set 1", "Availability": "9", "Capicity": "300", "setImage": { Wrenches } },
+    //     { "SetName": "Hardware Set 2", "Availability": "98", "Capicity": "370", "setImage": { Tools } },
+    //     { "SetName": "Hardware Set 3", "Availability": "32", "Capicity": "890", "setImage": { Wrenches } },
+    //     { "SetName": "Hardware Set 4", "Availability": "34", "Capicity": "500", "setImage": { Tools } },
+    //     { "SetName": "Hardware Set 5", "Availability": "78", "Capicity": "500", "setImage": { Wrenches } },
+    //     { "SetName": "Hardware Set 6", "Availability": "287", "Capicity": "400", "setImage": { Wrenches } },
+    // ]
+    // setHardwareSets(testingHWSets);
+    // ^^^^^^ CHANGE WITH BACKEND LATER ^^^^^^ //
+
     return (
         <>
             <Head>
@@ -19,33 +57,26 @@ export default function Hardware() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`${styles.hardwareBody}, ${styles.noselect}`} id='hardware-page-body'>
+            <main className={`${styles.hardwareBody}, noselect`} id='hardware-page-body'>
                 <div className='navbar' id='homeNav'>
                     <Navbar />
                 </div>
                 <div className='noselect' id={styles.hardwareParent}>
                     <div className={styles.hardwareSets}>
 
-                        <HardwareDisplay hardwareName='Hardware Set 1' hardwareQTY='87' imageURL={Wrenches} />
-                        <HardwareDisplay hardwareName='Hardware Set 2' hardwareQTY='20' imageURL={Tools} />
-                        <HardwareDisplay hardwareName='Hardware Set 3' hardwareQTY='11' imageURL={Wrenches} />
-                        <HardwareDisplay hardwareName='Hardware Set 4' hardwareQTY='14' imageURL={Tools} />
-                        <HardwareDisplay hardwareName='Hardware Set 5' hardwareQTY='77' imageURL={Wrenches} />
-                        <HardwareDisplay hardwareName='Hardware Set 6' hardwareQTY='37' imageURL={Tools} />
-                        <HardwareDisplay hardwareName='Hardware Set 7' hardwareQTY='478' imageURL={Tools} />
-                        <HardwareDisplay hardwareName='Hardware Set 8' hardwareQTY='90' imageURL={Wrenches} />
-                        <HardwareDisplay hardwareName='Hardware Set 9' hardwareQTY='78' imageURL={Tools} />
-                        <HardwareDisplay hardwareName='Hardware Set 10' hardwareQTY='23' imageURL={Wrenches} />
-                        <HardwareDisplay hardwareName='Hardware Set 11' hardwareQTY='84' imageURL={Tools} />
-                        <HardwareDisplay hardwareName='Hardware Set 12' hardwareQTY='83' imageURL={Wrenches} />
-                        <HardwareDisplay hardwareName='Hardware Set 13' hardwareQTY='36' imageURL={Wrenches} />
-                        <HardwareDisplay hardwareName='Hardware Set 14' hardwareQTY='1' imageURL={Tools} />
-                        <HardwareDisplay hardwareName='Hardware Set 15' hardwareQTY='7' imageURL={Wrenches} />
-                        <HardwareDisplay hardwareName='Hardware Set 16' hardwareQTY='10' imageURL={Wrenches} />
-                        <HardwareDisplay hardwareName='Hardware Set 17' hardwareQTY='200' imageURL={Wrenches} />
-                        <HardwareDisplay hardwareName='Hardware Set 18' hardwareQTY='40' imageURL={Tools} />
-                        <HardwareDisplay hardwareName='Hardware Set 19' hardwareQTY='870' imageURL={Wrenches} />
+                        {hardwareSets.length >= 1 && hardwareSets.map((hardwareSet) =>
+                            <>
+                                <div className={styles.setDiv}>
+                                    <HardwareDisplay set={hardwareSet} />
+                                </div>
+                            </>
+                        )}
 
+                        {hardwareSets.length === 0 &&
+                            <>
+                                <p style={{ color: 'whitesmoke', fontSize: '4vw', textAlign: 'center' }}>No Sets Yet</p>
+                            </>
+                        }
 
 
                     </div>
@@ -54,8 +85,8 @@ export default function Hardware() {
                             <div className={styles.createStar}>
                                 <AiFillStar className={styles.theStar} />
                                 <Slide left>
-                                    <p className={styles.theCreateText}>Create</p>
-                                    <p className={styles.theCreateDescription}>New Project</p>
+                                    <p className={styles.theCreateText} onClick={() => { location.replace('/Projects/Join') }}>Join</p>
+                                    <p className={styles.theCreateDescription} onClick={() => { location.replace('/Create') }}>Create Project</p>
                                 </Slide>
                             </div>
                         </div>

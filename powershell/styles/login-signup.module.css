@@ -1,28 +1,6 @@
 /* This page will act as the global for the login and signup styles (css) */
-
-@import './login.css';
-/* importing the specific login page css */
-@import './signup.css';
 /* importing the specific signup page css */
 @import './Fonts.css';
-
-
-/* Prevent anyone from highlighting unspecified spots in the site */
-.noselect {
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Old versions of Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none;
-    /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
-  }
 
 .loginOrSignupBody {
     height: 100vh;
@@ -93,4 +71,122 @@
 
 .supportContainer:hover {
     cursor: help;
+}
+
+
+
+/* Specific Login and Signup Page Content */
+.authContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pageTitle {
+    font-family: WaterBrush;
+    font-size: 8vw;
+    font-weight: lighter;
+    margin: 1%;
+}
+
+#LoginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginInput {
+    background-color: #1b1b1b;
+    font-size: 2.5vw;
+    color: white;
+    font-family: CormorantInfantBold;
+    border-radius: 30px;
+    padding: 5%;
+    margin: 5% 1%;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.loginInput:hover {
+    opacity: 1;
+}
+
+.loginInput::placeholder {
+    color: white;
+    font-family: CormorantInfantBoldItalic;
+    text-align: center;
+}
+
+.authSubmitButton {
+    padding: 2.5vw 2vw;
+    margin: 0;
+    border-radius: 300px;
+    font-size: 1.5vw;
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw;
+    background-color: #490429;
+    color: white;
+    font-family: CormorantInfantBoldItalic;
+    opacity: 0.75;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+
+.authSubmitButton:hover {
+    opacity: 1;
+    font-size: 1.75vw;
+}
+
+#getHelp {
+    margin: 0;
+}
+
+#getHelp:hover {
+    cursor: help;
+}
+
+#helpTxt {
+    margin: 0;
+    position: absolute;
+    bottom: 1vh;
+    color: #ffffff;
+    font-family: BerkshireSwash;
+    font-size: 2.5vw;
+}
+
+.switchAuthContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1% 5% 1% 3%;
+    background-color: #211E1E;
+    border-top-right-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.75;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+
+.switchAuthContainer:hover {
+    opacity: 1;
+}
+
+.switchAuthMethod {
+    margin: 1% 0%;
+    font-size: 1vw;
+    font-family: CormorantInfantItalic;
+}
+
+.switchPage {
+    margin: 1% 0%;
+    font-size: 2vw;
+    font-family: CormorantInfantBoldItalic;
 }

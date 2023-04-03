@@ -1,0 +1,137 @@
+@import './Fonts.css';
+/* importing all of the fonts */
+
+.updateContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.updateTitle {
+    color: white;
+    font-size: 4vw;
+}
+
+.updateContent {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.updateHalf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectInput {
+    font-size: 2vw;
+    font-family: AlmendraBoldItalic;
+    text-align: center;
+    color: lavenderblush;
+    background-color: #ffffff00;
+    border-radius: 60px;
+    width: 45vw;
+}
+
+.selectOption {
+    color: black;
+    font-family: CormorantInfantBold;
+}
+
+.updateDiv {
+    display: flex;
+    align-items: center;
+    background-color: #25040fab;
+    border-radius: 80px 70px 50px 0px;
+    margin: 5%;
+    padding: 10%;
+}
+
+.updateDiv:hover {
+    background-color: #25040fdd;
+}
+
+.updateName {
+    font-size: 2vw;
+    color: #e2d5d5;
+    font-style: italic;
+    margin: 1% 5%;
+    text-align: center;
+}
+
+.ogOut {
+    color: lightslategray;
+    margin: 1%;
+    text-align: center;
+    border-left: 2px solid white;
+    border-right: 2px dashed white;
+    padding: 1%;
+}
+
+.inputHw {
+    font-size: 2vw;
+    background-color: #ffffff00;
+    color: white;
+    width: 15vw;
+    height: fit-content;
+    border-radius: 10px 0px 10px 80px;
+    text-align: center;
+}
+
+.inputHw::placeholder {
+    color: rgba(255, 240, 245, 0.281);
+    font-style: italic;
+}
+
+
+
+.hardwareHalf {
+    overflow-y: scroll;
+    width: 25vw;
+    height: 70vh !important;
+    height: fit-content;
+    border: 4px solid white;
+    border-radius: 30px;
+    background-color: #0000008a;
+    padding: 1% 5%;
+}
+
+.hardwareHalf:hover {
+    background-color: #000000dd;
+}
+
+.hardwareHalf::-webkit-scrollbar {
+    width: 0em;
+    display: none;
+}
+
+.setDiv {
+    height: fit-content;
+    margin: 1vw;
+}
+
+.submitButton {
+    position: fixed;
+    top: 15vh;
+    right: 10vh;
+    background-color: #b40d2ea2;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    border-radius: 80px;
+    padding: 1% 5%;
+    cursor: pointer;
+    box-shadow: 0vh 0vw 30px white;
+}
+
+.submitButton:hover {
+    background-color: #c2092e;
+    font-style: italic;
+    text-decoration-line: overline;
+    box-shadow: 0vh 0vw 10px white;
+}

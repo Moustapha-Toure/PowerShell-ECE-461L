@@ -1,16 +1,61 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
+import React, { useState, useEffect, useCallback } from 'react';
+import styles from '@/styles/Home.module.css';
+import { useStateContext } from '@/context/StateContext'
 import { Navbar, HomeButton, Footer } from '@/components/Components'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Slide from 'react-reveal/Slide';
 import Rotate from 'react-reveal/Rotate';
 import Zoom from 'react-reveal/Zoom';
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import Cookies from 'universal-cookie';
 import Link from 'next/link';
 
 
 export default function Home() {
+  const store = new Cookies();
+  const { verifyAuthentication, setDisplayDashboard } = useStateContext();
+  useEffect(() => { if (!verifyAuthentication()) { location.replace('/') } })
+  const [user, setUser] = useState(() => {
+    return store.get('user') || 'None'
+  });
+
+  const [Nickname, setNickname] = useState('Who are you?')
+  useEffect(() => {
+    if ((user) && (user !== undefined) && (user !== 'None')) {
+      setNickname(user['Nickname'])
+
+    }
+  })
+
+  const displayPossibilities = () => {
+    toast.info(`Scroll Up`, {
+      position: "bottom-left",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      pauseOnFocusLoss: false
+    });
+  }
+
+  // const [user, setUser] = useState(null)
+
+  // useEffect(() => {
+  //   if (currentUser !== null) {
+  //     setNickname(currentUser.Nickname)
+  //   }
+  // }, currentUser)
+
+
+  // const Nickname = 'Moussey Moo';
+  // useEffect(() => { checkAuthentication() })
 
   return (
     <>
@@ -20,7 +65,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.homeBody}, ${styles.noselect}`} id='home-page-body'>
+      <main className={`${styles.homeBody}, noselect`} id='home-page-body'>
         <div className='navbar' id='homeNav'>
           <Navbar />
         </div>
@@ -29,7 +74,7 @@ export default function Home() {
 
           <div className={`${styles.HomeScrollContainer}, coverPage`} id={styles.homeWelcomeContainer}>
             <Rotate top right>
-              <div className={styles.dashButtonContainer} id={styles.navigateToDashboard}>
+              <div className={styles.dashButtonContainer} id={styles.navigateToDashboard} onClick={displayPossibilities}>
                 <div className={styles.diamondButton}>
                   <p className={styles.buttonText} id={styles.dashButton}>Dashboard</p>
                 </div>
@@ -49,7 +94,7 @@ export default function Home() {
               </Slide>
               <Slide right>
                 <h1 className={styles.welcomeText} id={styles.welcomeUser}>
-                  ... Nickname
+                  ... {(Nickname != undefined) && (Nickname != null) && Nickname}
                 </h1>
               </Slide>
             </div>
@@ -74,7 +119,7 @@ export default function Home() {
                 </h1>
               </Zoom>
               <Zoom bottom>
-                <h1 className={styles.homeButton} id={styles.homeToHardware}>Add Button Component</h1>
+                <h1 className={styles.homeButton} id={styles.homeToHardware} onClick={() => {location.replace('/Projects/Create')}} >here</h1>
               </Zoom>
             </div>
           </div>
@@ -97,7 +142,7 @@ export default function Home() {
                 </h1>
               </Zoom>
               <Zoom bottom>
-                <h1 className={styles.homeButton} id={styles.homeToProjects}>here</h1>
+                <h1 className={styles.homeButton} id={styles.homeToProjects} onClick={() => {setDisplayDashboard(true)}} >here</h1>
               </Zoom>
             </div>
           </div>
